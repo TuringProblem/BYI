@@ -1,0 +1,30 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tailwind + JS Starter</title>
+    <link rel="stylesheet" href="output.css">
+</head>
+<body class="bg-gray-100 min-h-screen flex items-center justify-center">
+
+    <div class="bg-white p-8 rounded-xl shadow-md max-w-sm text-center">
+        <h1 class="text-2xl font-bold text-gray-800 mb-2">Tailwind is Working!</h1>
+        <p class="text-gray-600 mb-6">You can now style your HTML using utility classes directly in your markup.</p>
+
+      <div class="flex flex-col gap-4">
+        <button id="actionBtn" class="bg-blue-600 hover:bg-blue-700 text-white font-medium py-2 px-4 rounded-lg transition duration-200 cursor-pointer">
+            Click Me Please
+        </button>
+        <input id="inputData" type="text"></input>
+      </div>
+    </div>
+
+  <dialog id="my-dialog">
+      <button command="close" commandfor="my-dialog">Close</button>
+  </dialog>
+
+  <script src="sets.js" defer></script>
+
+
+</body>
+</html>
