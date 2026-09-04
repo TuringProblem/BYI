@@ -4,27 +4,30 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Tailwind + JS Starter</title>
     <link rel="stylesheet" href="output.css">
+    <link rel="stylesheet" href="set-style.css">
 </head>
 <body class="bg-gray-100 min-h-screen flex items-center justify-center">
+    <div class="bg-gray text-center w-full h-full p-8">
+      <div class="bg-white p-8 rounded-xl shadow-md"> 
+        <h1 class="text-2xl font-bold text-gray-800 mb-2">So you want to learn sets!</h1>
+        <p class="text-gray-600 mb-6">Hello world.</p>
 
-    <div class="bg-white p-8 rounded-xl shadow-md max-w-sm text-center">
-        <h1 class="text-2xl font-bold text-gray-800 mb-2">Tailwind is Working!</h1>
-        <p class="text-gray-600 mb-6">You can now style your HTML using utility classes directly in your markup.</p>
 
-      <div class="flex flex-col gap-4">
-        <button id="actionBtn" class="bg-blue-600 hover:bg-blue-700 text-white font-medium py-2 px-4 rounded-lg transition duration-200 cursor-pointer">
-            Click Me Please
-        </button>
-        <input id="inputData" type="text"></input>
+        <div class="p-4 flex flex-col gap-4">
+          <button id="actionBtn" class="bg-blue-600 hover:bg-blue-700 text-white font-medium py-2 px-4 rounded-lg transition duration-200 cursor-pointer">
+              Click Me Please
+          </button>
+          <input id="inputData" type="text" class="bg-black rounded-sm text-white"></input>
+          <special-card text="This is a special card"></special-card>
+        </div>
       </div>
     </div>
 
-  <dialog id="my-dialog">
-      <button command="close" commandfor="my-dialog">Close</button>
+  <dialog id="my-dialog" class="bg-white p-8 rounded-xl shadow-md m-auto">
+      <button command="close" commandfor="my-dialog"></button>
   </dialog>
 
   <script src="sets.js" defer></script>
-
 
 </body>
 </html>

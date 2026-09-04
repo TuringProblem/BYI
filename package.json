@@ -4,6 +4,8 @@
   "description": "<div align=\"center\">     <h2>BYI</h2>     <p>(Build Your Intuition)</p> </div>",
   "main": "index.js",
   "scripts": {
+    "dev": "tailwindcss -i ./src/input.css -o ./sets/output.css --watch",
+    "build": "tailwindcss -i ./src/input.css -o ./sets/output.css",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
