@@ -32,4 +32,7 @@ class SpecialCard extends HTMLElement {
   }
 }
 
+
+
 customElements.define('special-card', SpecialCard);
+

@@ -4,8 +4,10 @@
   "description": "<div align=\"center\">     <h2>BYI</h2>     <p>(Build Your Intuition)</p> </div>",
   "main": "index.js",
   "scripts": {
-    "dev": "tailwindcss -i ./src/input.css -o ./sets/output.css --watch",
-    "build": "tailwindcss -i ./src/input.css -o ./sets/output.css",
+    "dev": "tailwindcss -i ./vanilla/src/input.css -o ./vanilla/sets/output.css --watch",
+    "build": "tailwindcss -i ./vanilla/src/input.css -o ./vanilla/sets/output.css",
+    "react:dev": "npm --prefix react-version run dev",
+    "react:build": "npm --prefix react-version run build",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
