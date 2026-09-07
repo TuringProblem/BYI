@@ -1,6 +1,7 @@
 import { useEffect, useRef, useState } from 'react'
 import { SpecialCard } from '../../components/SpecialCard'
 
+
 export function SetsPage() {
   const [value, setValue] = useState('')
   const [submitted, setSubmitted] = useState<string | null>(null)
