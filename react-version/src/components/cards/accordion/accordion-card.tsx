@@ -1,28 +1,26 @@
-import type { FC, ReactNode } from "react";
+import type { FC, ReactNode, HTMLAttributes } from "react";
 import { BaseCard } from "../base/base-card";
 
 type AccordionSection = {
   section: string;
   content: ReactNode;
-}
+};
 
 type AccordionCardProps = {
   data: AccordionSection[];
-}
+} & HTMLAttributes<HTMLDivElement>;
 
-export const AccordionCard: FC<AccordionCardProps> = ({ data }) => {
+export const AccordionCard: FC<AccordionCardProps> = ({ data, className }) => {
   return (
-    <BaseCard>
-      <div className="flex flex-col gap-4">
-        {data.map((card, key) => (
-          <div className="flex flex-col gap-2" key={key}>
-            <details>
-              <summary className="text-lg font-bold text-black">{card.section}</summary>
-              <div className="bg-gray-200 p-4 rounded-xl">{card.content}</div>
-            </details>
-          </div>
-        ))}
-      </div>
+    <BaseCard className="gap-4 rounded-md">
+      {data.map((card, key) => (
+        <div className="bg-gray-100 p-4 rounded-xl">
+          <details className="flex flex-col gap-4" key={key}>
+            <summary className="flex text-lg font-bold text-black hover:cursor-pointer">{card.section}</summary>
+            <p className={`flex text-black ${className}`}>{card.content}</p>
+          </details>
+        </div>
+      ))}
     </BaseCard>
   );
 }

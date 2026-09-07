@@ -5,9 +5,9 @@ type BaseCardProps = {
 } & HTMLAttributes<HTMLDivElement>;
 
 
-export const BaseCard: FC<BaseCardProps> = ({ children }) => {
+export const BaseCard: FC<BaseCardProps> = ({ children, className }) => {
   return (
-    <div className="w-full h-full bg-white p-8">
+    <div className={`flex flex-col w-full h-full bg-white p-8 ${className}`}>
       {children}
     </div>
   );
